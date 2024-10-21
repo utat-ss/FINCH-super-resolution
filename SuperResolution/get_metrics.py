@@ -108,37 +108,37 @@ if __name__ == "__main__":
 
 
     #original images 
-    indian_pines = np.load("../SuperResolution/dcscn-super-resolution/indian_pine_array.npy")
+    indian_pines = np.load("./dcscn-super-resolution/indian_pine_array.npy")
 
-    cuprite = np.array(Image.open("../SuperResolution/dcscn-super-resolution/cuprite.png"))
+    cuprite = np.array(Image.open("./dcscn-super-resolution/cuprite.png"))
 
     cuprite = cuprite[:, :, 0:3]
 
     cuprite = cv2.resize(cuprite, (680, 672))
 
-    ksc = np.array(Image.open("../SuperResolution/dcscn-super-resolution/ksc.png"))
+    ksc = np.array(Image.open("./dcscn-super-resolution/ksc.png"))
 
     ksc = ksc[:, :, 0:3]
 
     ksc = cv2.resize(ksc, (544, 532))
 
-    pavia = np.array(Image.open("../SuperResolution/dcscn-super-resolution/pavia.png"))
+    pavia = np.array(Image.open("./dcscn-super-resolution/pavia.png"))
 
     pavia = pavia[:, :, 0:3]
     pavia = cv2.resize(pavia, (536, 536))
 
     #Super resolution corection images
-    indian_pines_corrected = np.array(Image.open("../SuperResolution/dcscn-super-resolution/output/dcscn_L12_F196to48_Sc4_NIN_A64_PS_R1F32/image1DownScaled_result.png"))
+    indian_pines_corrected = np.array(Image.open("./dcscn-super-resolution/output/dcscn_L12_F196to48_Sc4_NIN_A64_PS_R1F32/image1DownScaled_result.png"))
 
-    cuprite_corrected = np.array(Image.open("../SuperResolution/dcscn-super-resolution/output/dcscn_L12_F196to48_Sc4_NIN_A64_PS_R1F32/cuprite-smaller_result.png"))
+    cuprite_corrected = np.array(Image.open("./dcscn-super-resolution/output/dcscn_L12_F196to48_Sc4_NIN_A64_PS_R1F32/cuprite-smaller_result.png"))
 
-    ksc_corrected = np.array(Image.open("../SuperResolution/dcscn-super-resolution/output/dcscn_L12_F196to48_Sc4_NIN_A64_PS_R1F32/ksc-smaller_result.png"))
+    ksc_corrected = np.array(Image.open("./dcscn-super-resolution/output/dcscn_L12_F196to48_Sc4_NIN_A64_PS_R1F32/ksc-smaller_result.png"))
 
-    pavia_corrected = np.array(Image.open("../SuperResolution/dcscn-super-resolution/output/dcscn_L12_F196to48_Sc4_NIN_A64_PS_R1F32/pavia-smaller_result.png"))
+    pavia_corrected = np.array(Image.open("./dcscn-super-resolution/output/dcscn_L12_F196to48_Sc4_NIN_A64_PS_R1F32/pavia-smaller_result.png"))
 
     #input images
 
-    pavia_input = np.array(Image.open("../SuperResolution/pavia-smaller.png"))
+    pavia_input = np.array(Image.open("./pavia-smaller.png"))
 
     print("Original Images: \n")
 
